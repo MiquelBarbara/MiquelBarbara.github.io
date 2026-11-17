@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="description" content="RavenEngine — individual contributions by Miquel Barbarà.">
+  <title>RavenEngine | Contributions | Miquel Barbarà</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a href="index.html" class="logo" aria-label="Miquel Barbarà home">MB<span>.</span></a>
+  <nav aria-label="Main navigation">
+    <a href="index.html#projects">Projects</a><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <a class="header-link" href="https://github.com/MiquelBarbara" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a class="btn cv-small" href="assets/Miquel_Barbara_Game_Designer_CV.pdf" download>Download CV ↓</a>
+  </div>
+</header>
+<main id="main" class="contribution-page">
+  <div class="contribution-intro" id="top">
+    <a class="text-link" href="index.html#ravenengine">← Back to projects</a>
+    <p class="eyebrow">PROJECT BREAKDOWN</p>
+    <h1>RavenEngine</h1>
+    <p>My work on rendering, asset workflows and editor tools for our custom C++ / DirectX 12 engine.</p>
+  </div>
+  <section class="contributions" id="ravenengine-contributions" aria-labelledby="ravenengine-contributions-title">
+        <div class="contributions-heading"><div><p class="eyebrow">MY CONTRIBUTIONS</p><h2 id="ravenengine-contributions-title">What I worked on</h2></div><p>Selected work · click any image to enlarge</p></div>
+        <div class="feature-grid"><article class="feature-card">
+          <a class="feature-image" href="assets/features/deferred-shading.webp" target="_blank" rel="noopener noreferrer" aria-label="Enlarge: Deferred geometry pass"><img src="assets/features/deferred-shading.webp" alt="Deferred geometry pass — visual from my project report" width="434" height="326" loading="lazy" decoding="async"></a>
+          <div class="feature-copy"><p class="feature-role">Rendering · collaboration</p><h3>Deferred geometry pass</h3><p>Created GeometryPass and its vertex and pixel shaders to populate the G-buffer. Fran and Raul completed the remaining deferred pipeline.</p></div>
+        </article><article class="feature-card">
+          <a class="feature-image" href="assets/features/asset-browser.webp" target="_blank" rel="noopener noreferrer" aria-label="Enlarge: Asset &amp; glTF import pipeline"><img src="assets/features/asset-browser.webp" alt="Asset &amp; glTF import pipeline — visual from my project report" width="1303" height="312" loading="lazy" decoding="async"></a>
+          <div class="feature-copy"><p class="feature-role">Engine systems</p><h3>Asset &amp; glTF import pipeline</h3><p>Developed the filesystem and import workflow, including glTF mesh/material subassets, asset references, reimport resolution and texture settings. Collaborated with Hector on the pipeline.</p></div>
+        </article><article class="feature-card">
+          <a class="feature-image" href="assets/features/data-containers.webp" target="_blank" rel="noopener noreferrer" aria-label="Enlarge: DataContainers"><img src="assets/features/data-containers.webp" alt="DataContainers — visual from my project report" width="1025" height="655" loading="lazy" decoding="async"></a>
+          <div class="feature-copy"><p class="feature-role">Editor tooling</p><h3>DataContainers</h3><p>Introduced reusable configuration assets and their editor, then connected them to Bound, character and enemy settings for gameplay tuning.</p></div>
+        </article><article class="feature-card">
+          <a class="feature-image" href="assets/features/flow-map.webp" target="_blank" rel="noopener noreferrer" aria-label="Enlarge: Animated flow-map materials"><img src="assets/features/flow-map.webp" alt="Animated flow-map materials — visual from my project report" width="1328" height="725" loading="lazy" decoding="async"></a>
+          <div class="feature-copy"><p class="feature-role">Rendering</p><h3>Animated flow-map materials</h3><p>Added directional texture scrolling and two-phase flow-map water, with normal-map fallbacks and controls for flow and texture strength.</p></div>
+        </article><article class="feature-card">
+          <a class="feature-image" href="assets/features/culling.webp" target="_blank" rel="noopener noreferrer" aria-label="Enlarge: Quadtree &amp; frustum culling"><img src="assets/features/culling.webp" alt="Quadtree &amp; frustum culling — visual from my project report" width="1025" height="617" loading="lazy" decoding="async"></a>
+          <div class="feature-copy"><p class="feature-role">Collaboration · Javi &amp; David</p><h3>Quadtree &amp; frustum culling</h3><p>Co-developed the first quadtree visibility workflow and integrated it with the camera, organizing objects by their world-space bounding boxes.</p></div>
+        </article><article class="feature-card">
+          <a class="feature-image" href="assets/features/library-loading.webp" target="_blank" rel="noopener noreferrer" aria-label="Enlarge: Library &amp; release loading"><img src="assets/features/library-loading.webp" alt="Library &amp; release loading — visual from my project report" width="1400" height="311" loading="lazy" decoding="async"></a>
+          <div class="feature-copy"><p class="feature-role">Asset pipeline</p><h3>Library &amp; release loading</h3><p>Migrated prefabs, navmeshes and sound banks to asset references and Library-backed loading. Connected packaged content through build.cfg and fixed prefab instantiation.</p></div>
+        </article><article class="feature-card">
+          <a class="feature-image" href="assets/features/ring-buffer.webp" target="_blank" rel="noopener noreferrer" aria-label="Enlarge: GPU memory &amp; resource lifetime"><img src="assets/features/ring-buffer.webp" alt="GPU memory &amp; resource lifetime — visual from my project report" width="1400" height="443" loading="lazy" decoding="async"></a>
+          <div class="feature-copy"><p class="feature-role">Rendering systems</p><h3>GPU memory &amp; resource lifetime</h3><p>Fixed wraparound and aligned-copy over-reads with David. Also worked on descriptors, deferred resource release and rendering memory leaks.</p></div>
+        </article><article class="feature-card">
+          <a class="feature-image" href="assets/features/cutscene.webp" target="_blank" rel="noopener noreferrer" aria-label="Enlarge: Video assets &amp; decoding"><img src="assets/features/cutscene.webp" alt="Video assets &amp; decoding — visual from my project report" width="1400" height="717" loading="lazy" decoding="async"></a>
+          <div class="feature-copy"><p class="feature-role">Engine systems</p><h3>Video assets &amp; decoding</h3><p>Added VideoAsset support and corrected decoder issues supporting cinematic playback and the game’s opening sequence.</p></div>
+        </article></div>
+        <p class="contributions-note">Additional engine work: common JSON and binary serialization across components, scenes and assets; rendering-pass organization, skybox and RenderSurface integration; asset-browser drag and drop and multiple-window interactions.</p>
+      </section>
+  <div class="contribution-navigation"><a class="btn secondary" href="index.html#ravenengine">← Back to projects</a><a class="btn secondary" href="bound-by-death.html">Bound by Death contributions →</a></div>
+</main>
+<footer><a href="index.html" class="logo">MB<span>.</span></a><p>© <span id="year"></span> Miquel Barbarà</p><a href="#top" class="back-top">Back to top ↑</a></footer>
+</body>
+</html>
